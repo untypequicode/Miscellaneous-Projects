@@ -1,4 +1,6 @@
-# Class Planet
+# Monetary Planet
+
+## Class Planet
 
 The ```Planet``` class allows to model a planet with a given monetary system and inhabitants with a certain amount of money. It allows to calculate the different possible combinations of coins and bills that can be obtained with the given amount of money and the possible purchase options.
 
@@ -8,7 +10,7 @@ The ```Planet``` class allows to model a planet with a given monetary system and
 
 
 
-## Using the class
+### Using the class
 To use the ```Planet```class, you must first create an instance of this class by specifying the values of its attributes: ```monetary_system``` and ```money```.
 
 ``` python
@@ -27,7 +29,7 @@ combinations = planet.get_possible_wallet_combinations()
 purchases = planet.get_possible_purchases()
 ```
 
-## Example
+### Example
 
 ``` python
 # Create an instance of the Planet class
