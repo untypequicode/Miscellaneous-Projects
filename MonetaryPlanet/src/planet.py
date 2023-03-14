@@ -77,6 +77,7 @@ class Planete():
                     boolean = boolean and (valeur in element)
                 if boolean:
                     possibilites_portefeuille.append(valeur)
+        
         possibilites_portefeuille = self.__tri(possibilites_portefeuille, False)    
         return possibilites_portefeuille
 
@@ -108,6 +109,7 @@ class Planete():
         None
 
         """
+        """
         for elem in self.systeme_monetaire:
             nouvelle_somme = sum(tableau) + elem
             if sum(tableau) == self.argent:
@@ -117,6 +119,14 @@ class Planete():
                 nouvelle_liste.append(elem)
                 self.possibilites_portefeuille_sans_tri.append(nouvelle_liste)
             elif nouvelle_somme < self.argent:
+                nouvelle_liste = list(tableau)
+                nouvelle_liste.append(elem)
+                self.__calcul_possibilites_portefeuille(nouvelle_liste)
+        """
+        for elem in self.systeme_monetaire:
+            if sum(tableau) == self.argent:
+                self.possibilites_portefeuille_sans_tri.append(list(tableau))
+            elif sum(tableau) < self.argent:
                 nouvelle_liste = list(tableau)
                 nouvelle_liste.append(elem)
                 self.__calcul_possibilites_portefeuille(nouvelle_liste)
@@ -147,6 +157,6 @@ class Planete():
         return tableau_resultat
 
 
-prince = Planete([1, 3, 10], 10)
+prince = Planete([1, 3, 10], 50)
 print(prince.get_possibilites_portefeuille())
 print(prince.get_possibilites_achat())
