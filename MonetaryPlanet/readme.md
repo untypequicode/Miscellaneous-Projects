@@ -5,7 +5,7 @@
 The ```Planet``` class allows to model a planet with a given monetary system and inhabitants with a certain amount of money. It allows to calculate the different possible combinations of coins and bills that can be obtained with the given amount of money and the possible purchase options.
 
 <p align="center">
-<img src="child-6902674.png" alt="Planet.png" width=30%/>
+<img src="docs/img/child-6902674.png" alt="Planet.png" width=30%/>
 </p>
 
 
