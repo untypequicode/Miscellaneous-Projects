@@ -4,10 +4,7 @@ Discover various projects in this public repository that gathers several of my c
 
 ## List of Projects
 
-- Project A: a web application to manage tasks.
-- Project B: a Python library to generate charts.
-- Project C: a Bash script to automate a recurring task.
-- Project D: an Android app to track expenses.
+- [Monetary Planet](/MonetaryPlanet) : The Planete class calculates the possible wallets and purchases with given money.
 
 ## How to Use These Projects?
 
