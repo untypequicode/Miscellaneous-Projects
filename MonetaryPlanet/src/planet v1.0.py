@@ -157,6 +157,6 @@ class Planete():
         return tableau_resultat
 
 
-prince = Planete([1, 3, 10], 50)
+prince = Planete([1, 3, 10], 20)
 print(prince.get_possibilites_portefeuille())
 print(prince.get_possibilites_achat())
